@@ -1,0 +1,121 @@
+.places {
+  &-section {
+    margin: 50px 0px;
+  }
+  &-main {
+    margin-bottom: 60px;
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+  }
+
+  &-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+    bottom: 130px;
+    // bottom: 20%;
+    padding: 30px;
+    background-color: $Background-light-grey;
+    box-shadow: 0px 6px 24px 0px rgba(131, 155, 177, 0.12);
+    border-radius: 6px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &-item-name {
+    margin-bottom: 8px;
+  }
+  &-item-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    color: $text-icon-60;
+  }
+  &-item-rate {
+    display: flex;
+    margin-bottom: 8px;
+    gap: 5px;
+    > h1 {
+      color: $Tertiary-Warning-100;
+    }
+    > img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &-item-prices {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    > h1 {
+      color: $text-icon-60;
+    }
+    > span {
+      color: $primary-100;
+    }
+  }
+  &-item-img {
+    > img {
+      border-radius: 6px;
+    }
+  }
+}
+// Responsive
+@media screen and (max-width: 490.98px) {
+  .places {
+    &-item-content {
+      justify-content: unset;
+      align-items: unset;
+      flex-direction: column;
+      padding: 12px;
+      bottom: 75px;
+    }
+    &-list {
+      grid-auto-columns: 100%;
+    }
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .places {
+    &-item-content {
+      max-width: unset;
+    }
+    &-list {
+      display: grid;
+      justify-content: flex-start;
+      grid-auto-columns: 80%;
+      grid-auto-flow: column;
+      grid-gap: 24px;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      grid-template-columns: unset;
+    }
+    &-list::-webkit-scrollbar {
+      display: none;
+      width: 0;
+    }
+    &-list > * {
+      scroll-snap-align: start;
+    }
+  }
+}
+
+@media (min-width: 767.98px) and (max-width: 1279.98px) {
+  .places {
+    &-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}

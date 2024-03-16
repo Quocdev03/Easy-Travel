@@ -1,0 +1,96 @@
+.footer {
+  background-color: $Background-Card;
+  &-main {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+    grid-gap: 0 270px;
+    padding: 100px 0 90px 0;
+  }
+  &-logo {
+    margin-bottom: 32px;
+  }
+  &-desc {
+    color: $text-icon-80;
+    margin-bottom: 32px;
+  }
+  &-icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-column {
+    ul > li > a {
+      display: block;
+      color: $text-icon-100;
+      margin-bottom: 18px;
+      transition: all 0.2s linear;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  &-contact {
+    h1 > {
+      display: inline-block;
+      color: $text-icon-80;
+    }
+  }
+  &-contact-title {
+    margin-bottom: 18px;
+  }
+  &-contact-email,
+  &-contact-phone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    > h2 {
+      color: $text-icon-80;
+    }
+  }
+  &-contact-email {
+    margin-bottom: 18px;
+
+    > span {
+      display: block;
+      color: $primary-100;
+      text-transform: none;
+    }
+  }
+  &-contact-phone {
+    margin-bottom: 18px;
+
+    > span {
+      color: $text-icon-100;
+    }
+  }
+}
+.footer {
+  @media screen and (max-width: 1279.98px) {
+    &-main {
+      grid-gap: 0 100px;
+    }
+  }
+  @media screen and (max-width: 1023.98px) {
+    &-main {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+    }
+    &-list {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

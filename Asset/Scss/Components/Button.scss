@@ -1,0 +1,48 @@
+.primary {
+  &-small-button {
+    display: inline-block;
+    color: $text-icon-0;
+    padding: 11px 25px;
+    background-color: $primary-100;
+    border-radius: 4px;
+    position: relative;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    width: fit-content;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: all 0.2s linear;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+  &-small-outline {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    background: $Secondary-20;
+    padding: 10px 16px;
+    color: $text-icon-80;
+    transition: all 0.2s linear;
+    width: fit-content;
+    &:active {
+      transform: scale(0.96);
+    }
+    &:hover {
+      background-color: $primary-100;
+      color: $text-icon-0;
+    }
+  }
+}

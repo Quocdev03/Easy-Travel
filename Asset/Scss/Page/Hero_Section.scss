@@ -1,0 +1,40 @@
+.hero {
+  &-section {
+    margin-bottom: 100px;
+  }
+  &-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 560px;
+      border-radius: 6px;
+    }
+  }
+}
+// Responsive
+.hero {
+  @media screen and (max-width: 1023.98px) {
+    &-main {
+      > img {
+        height: 370px;
+      }
+    }
+  }
+  @media screen and (max-width: 767.98px) {
+    &-section {
+      margin-bottom: 80px;
+    }
+  }
+  @media screen and (max-width: 490.98px) {
+    &-section {
+      margin-bottom: 50px;
+    }
+    &-main {
+      > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
