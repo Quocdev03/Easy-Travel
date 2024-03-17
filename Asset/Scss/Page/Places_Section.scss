@@ -68,6 +68,12 @@
 // Responsive
 @media screen and (max-width: 490.98px) {
   .places {
+    &-item-name,
+    &-item-location,
+    &-item-rate,
+    &-item-prices {
+      margin-bottom: 5px;
+    }
     &-item-content {
       justify-content: unset;
       align-items: unset;

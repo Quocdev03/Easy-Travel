@@ -41,6 +41,7 @@ body {
       }
       @media screen and (max-width: 767.98px) {
         left: -15%;
+        height: 60px;
       }
     }
   }
@@ -53,4 +54,11 @@ body {
 }
 .hidden {
   display: none;
+}
+.global-logo {
+  @media screen and (max-width: 767.98px) {
+    > img {
+      width: 130px;
+    }
+  }
 }

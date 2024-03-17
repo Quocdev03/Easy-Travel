@@ -94,6 +94,7 @@ body {
 @media screen and (max-width: 767.98px) {
   .section-title::after {
     left: -15%;
+    height: 60px;
   }
 }
 .section-title-main {
@@ -105,6 +106,12 @@ body {
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .global-logo > img {
+    width: 130px;
+  }
 }
 
 .heading-1, .heading-2, .heading-3, .heading-4, .heading-5 {
@@ -135,10 +142,7 @@ body {
   line-height: 140%;
 }
 
-.body-medium-18, .body-medium-16 {
-  font-style: normal;
-}
-.body-regular-18, .body-regular-16 {
+.body-medium-18, .body-medium-16, .body-regular-18, .body-regular-16 {
   font-style: normal;
 }
 .body-medium-18 {
@@ -182,6 +186,132 @@ body {
   line-height: 140%;
 }
 
+@media screen and (max-width: 1279.98px) {
+  .heading-1 {
+    font-size: calc(56px * 1279.98 / 1980);
+    letter-spacing: calc(-0.7px * 1279.98 / 1980);
+  }
+  .heading-2 {
+    font-size: calc(48px * 1279.98 / 1980);
+    letter-spacing: calc(-0.48px * 1279.98 / 1980);
+  }
+  .heading-3 {
+    font-size: calc(32px * 1279.98 / 1980);
+    letter-spacing: calc(-0.32px * 1279.98 / 1980);
+  }
+  .heading-4 {
+    font-size: calc(24px * 1279.98 / 1980);
+  }
+  .heading-5 {
+    font-size: calc(20px * 1279.98 / 1980);
+  }
+  .body-medium-18 {
+    font-size: calc(18px * 1279.98 / 1980);
+  }
+  .body-medium-16 {
+    font-size: calc(16px * 1279.98 / 1980);
+  }
+  .body-regular-18 {
+    font-size: calc(18px * 1279.98 / 1980);
+  }
+  .body-regular-16 {
+    font-size: calc(16px * 1279.98 / 1980);
+  }
+  .label-Regular-14 {
+    font-size: calc(14px * 1279.98 / 1980);
+  }
+  .label-Regular-12 {
+    font-size: calc(12px * 1279.98 / 1980);
+    letter-spacing: calc(0.12px * 1279.98 / 1980);
+  }
+  .label-Regular-10 {
+    font-size: calc(10px * 1279.98 / 1980);
+  }
+}
+@media screen and (max-width: 1023.98px) {
+  .heading-1 {
+    font-size: calc(56px * 1023.98 / 1980);
+    letter-spacing: calc(-0.7px * 1023.98 / 1980);
+  }
+  .heading-2 {
+    font-size: calc(48px * 1023.98 / 1980);
+    letter-spacing: calc(-0.48px * 1023.98 / 1980);
+  }
+  .heading-3 {
+    font-size: calc(32px * 1023.98 / 1980);
+    letter-spacing: calc(-0.32px * 1023.98 / 1980);
+  }
+  .heading-4 {
+    font-size: calc(24px * 1023.98 / 1980);
+  }
+  .heading-5 {
+    font-size: calc(20px * 1023.98 / 1980);
+  }
+  .body-medium-18 {
+    font-size: calc(18px * 1023.98 / 1980);
+  }
+  .body-medium-16 {
+    font-size: calc(16px * 1023.98 / 1980);
+  }
+  .body-regular-18 {
+    font-size: calc(18px * 1023.98 / 1980);
+  }
+  .body-regular-16 {
+    font-size: calc(16px * 1023.98 / 1980);
+  }
+  .label-Regular-14 {
+    font-size: calc(14px * 1023.98 / 1980);
+  }
+  .label-Regular-12 {
+    font-size: calc(12px * 1023.98 / 1980);
+    letter-spacing: calc(0.12px * 1023.98 / 1980);
+  }
+  .label-Regular-10 {
+    font-size: calc(10px * 1023.98 / 1980);
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .heading-1 {
+    font-size: calc(56px * 767.98 / 1980);
+    letter-spacing: calc(-0.7px * 767.98 / 1980);
+  }
+  .heading-2 {
+    font-size: calc(48px * 767.98 / 1980);
+    letter-spacing: calc(-0.48px * 767.98 / 1980);
+  }
+  .heading-3 {
+    font-size: calc(32px * 767.98 / 1980);
+    letter-spacing: calc(-0.32px * 767.98 / 1980);
+  }
+  .heading-4 {
+    font-size: calc(24px * 767.98 / 1980);
+  }
+  .heading-5 {
+    font-size: calc(20px * 767.98 / 1980);
+  }
+  .body-medium-18 {
+    font-size: calc(18px * 767.98 / 1980);
+  }
+  .body-medium-16 {
+    font-size: calc(16px * 767.98 / 1980);
+  }
+  .body-regular-18 {
+    font-size: calc(18px * 767.98 / 1980);
+  }
+  .body-regular-16 {
+    font-size: calc(16px * 767.98 / 1980);
+  }
+  .label-Regular-14 {
+    font-size: calc(14px * 767.98 / 1980);
+  }
+  .label-Regular-12 {
+    font-size: calc(12px * 767.98 / 1980);
+    letter-spacing: calc(0.12px * 767.98 / 1980);
+  }
+  .label-Regular-10 {
+    font-size: calc(10px * 767.98 / 1980);
+  }
+}
 .primary-small-button {
   display: inline-block;
   color: #fff;
@@ -192,6 +322,11 @@ body {
   transition: 0.2s ease-in;
   cursor: pointer;
   width: fit-content;
+}
+@media screen and (max-width: 489.98px) {
+  .primary-small-button {
+    padding: 5px;
+  }
 }
 .primary-small-button::before {
   position: absolute;
@@ -433,6 +568,9 @@ body {
 }
 
 @media screen and (max-width: 490.98px) {
+  .places-item-name, .places-item-location, .places-item-rate, .places-item-prices {
+    margin-bottom: 5px;
+  }
   .places-item-content {
     justify-content: unset;
     align-items: unset;
@@ -627,6 +765,13 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
+  }
+  .footer-icon {
+    justify-content: center;
+  }
+  .footer-social > img {
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer-list {
     width: 100%;

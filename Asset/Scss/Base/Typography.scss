@@ -1,3 +1,96 @@
+// // Heading text
+// .heading {
+//   &-1,
+//   &-2,
+//   &-3,
+//   &-4,
+//   &-5 {
+//     font-style: normal;
+//     font-weight: 500;
+//   }
+//   &-1 {
+//     font-size: 56px;
+//     line-height: 130%;
+//     letter-spacing: -0.7px;
+//   }
+//   &-2 {
+//     font-size: 48px;
+//     line-height: 135%;
+//     letter-spacing: -0.48px;
+//   }
+//   &-3 {
+//     font-size: 32px;
+//     line-height: 135%;
+//     letter-spacing: -0.32px;
+//   }
+//   &-4 {
+//     font-size: 24px;
+//     line-height: 140%;
+//   }
+//   &-5 {
+//     font-size: 20px;
+//     line-height: 140%;
+//   }
+// }
+// // Body text
+// .body {
+//   &-medium-18,
+//   &-medium-16,
+//   &-regular-18,
+//   &-regular-16 {
+//     font-style: normal;
+//   }
+
+//   &-medium-18 {
+//     font-size: 18px;
+//     font-weight: 500;
+//     line-height: 145%;
+//   }
+//   &-medium-16 {
+//     font-size: 16px;
+//     font-weight: 500;
+//     line-height: 160%;
+//   }
+//   &-regular-18 {
+//     font-size: 18px;
+//     font-weight: 400;
+//     line-height: 145%;
+//   }
+//   &-regular-16 {
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 160%;
+//   }
+// }
+// // Label text
+// .label {
+//   &-Regular-14,
+//   &-Regular-12,
+//   &-Regular-10 {
+//     font-style: normal;
+//   }
+//   &-Regular-14 {
+//     font-size: 14px;
+//     font-weight: 400;
+//     line-height: 145%;
+//   }
+//   &-Regular-12 {
+//     font-size: 12px;
+//     font-weight: 400;
+//     line-height: 140%;
+//     letter-spacing: 0.12px;
+//   }
+//   &-Regular-10 {
+//     font-size: 10px;
+//     font-weight: 400;
+//     line-height: 140%;
+//   }
+// }
+
+// 1279.98px
+// 1023.98px
+// 767.98px
+// 489.98px
 // Heading text
 .heading {
   &-1,
@@ -32,12 +125,11 @@
     line-height: 140%;
   }
 }
+
 // Body text
 .body {
   &-medium-18,
-  &-medium-16 {
-    font-style: normal;
-  }
+  &-medium-16,
   &-regular-18,
   &-regular-16 {
     font-style: normal;
@@ -64,6 +156,7 @@
     line-height: 160%;
   }
 }
+
 // Label text
 .label {
   &-Regular-14,
@@ -86,5 +179,78 @@
     font-size: 10px;
     font-weight: 400;
     line-height: 140%;
+  }
+}
+
+// Media queries for different breakpoints
+$breakpoints: (
+  "large": 1279.98,
+  "medium": 1023.98,
+  "small": 767.98,
+  // "xsmall": 489.98,
+);
+
+@each $name, $size in $breakpoints {
+  @media screen and (max-width: #{$size}px) {
+    .heading {
+      &-1 {
+        font-size: calc(56px * #{$size} / 1980);
+        // line-height: calc(130% * #{$size} / 1980);
+        letter-spacing: calc(-0.7px * #{$size} / 1980);
+      }
+      &-2 {
+        font-size: calc(48px * #{$size} / 1980);
+        // line-height: calc(135% * #{$size} / 1980);
+        letter-spacing: calc(-0.48px * #{$size} / 1980);
+      }
+      &-3 {
+        font-size: calc(32px * #{$size} / 1980);
+        // line-height: calc(135% * #{$size} / 1980);
+        letter-spacing: calc(-0.32px * #{$size} / 1980);
+      }
+      &-4 {
+        font-size: calc(24px * #{$size} / 1980);
+        // line-height: calc(140% * #{$size} / 1980);
+      }
+      &-5 {
+        font-size: calc(20px * #{$size} / 1980);
+        // line-height: calc(140% * #{$size} / 1980);
+      }
+    }
+
+    .body {
+      &-medium-18 {
+        font-size: calc(18px * #{$size} / 1980);
+        // line-height: calc(145% * #{$size} / 1980);
+      }
+      &-medium-16 {
+        font-size: calc(16px * #{$size} / 1980);
+        // line-height: calc(160% * #{$size} / 1980);
+      }
+      &-regular-18 {
+        font-size: calc(18px * #{$size} / 1980);
+        // line-height: calc(145% * #{$size} / 1980);
+      }
+      &-regular-16 {
+        font-size: calc(16px * #{$size} / 1980);
+        // line-height: calc(160% * #{$size} / 1980);
+      }
+    }
+
+    .label {
+      &-Regular-14 {
+        font-size: calc(14px * #{$size} / 1980);
+        // line-height: calc(145% * #{$size} / 1980);
+      }
+      &-Regular-12 {
+        font-size: calc(12px * #{$size} / 1980);
+        // line-height: calc(140% * #{$size} / 1980);
+        letter-spacing: calc(0.12px * #{$size} / 1980);
+      }
+      &-Regular-10 {
+        font-size: calc(10px * #{$size} / 1980);
+        // line-height: calc(140% * #{$size} / 1980);
+      }
+    }
   }
 }

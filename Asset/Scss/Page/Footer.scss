@@ -81,6 +81,13 @@
       flex-wrap: wrap;
       gap: 50px;
     }
+    &-icon {
+      justify-content: center;
+    }
+    &-social > img {
+      margin-left: auto;
+      margin-right: auto;
+    }
     &-list {
       width: 100%;
       display: grid;
