@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/Asset/Css/App.css" />
+    <link rel="icon" href="/Asset/Images/Icon/Logo.svg" type="image/x-icon" />
+    <title>Authentication</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-main">
+            <div class="header-logo global-logo">
+              <img srcset="/Asset/Images/logo.png 2x" alt="" />
+            </div>
+            <div class="header-menu">
+              <ul class="header-menu-list">
+                <li class="header-menu-item">
+                  <a href="#!" class="body-medium-16 header-menu-item__link"
+                    >Home</a
+                  >
+                </li>
+                <li class="header-menu-item">
+                  <a href="#!" class="body-medium-16 header-menu-item__link"
+                    >About</a
+                  >
+                </li>
+                <li class="header-menu-item">
+                  <a href="#!" class="body-medium-16 header-menu-item__link"
+                    >Tours</a
+                  >
+                </li>
+                <li class="header-menu-item">
+                  <a href="#!" class="body-medium-16 header-menu-item__link"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+              <div class="header-auth">
+                <div class="header-auth-item">
+                  <button
+                    class="header-auth-login primary-small-button body-medium-16"
+                  >
+                    Login
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="menu-toggle heading-4">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="mb-nav">
+              <div class="menu-close heading-4">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <ul class="navigation">
+                <li class="navigation-item">
+                  <a href="#!" class="navigation-item-link body-medium-16"
+                    >Home</a
+                  >
+                </li>
+                <li class="navigation-item">
+                  <a href="#!" class="navigation-item-link body-medium-16"
+                    >About</a
+                  >
+                </li>
+                <li class="navigation-item">
+                  <a href="#!" class="navigation-item-link body-medium-16"
+                    >Tour</a
+                  >
+                </li>
+                <li class="navigation-item">
+                  <a href="#!" class="navigation-item-link body-medium-16"
+                    >Blog</a
+                  >
+                </li>
+                <div class="navigation-auth-item">
+                  <button
+                    class="header-auth-login primary-small-button body-medium-16"
+                  >
+                    Login
+                  </button>
+                </div>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="authentication">
+          <div class="container">
+            <div class="login-section-tab">
+              <span class="login-section-login active body-regular-16"
+                >Log In</span
+              >
+              <span class="login-section-register body-regular-16"
+                >Register</span
+              >
+            </div>
+            <div class="authentication-main">
+              <div class="authentication-login">
+                <div class="login-main">
+                  <div class="login-background">
+                    <img
+                      srcset="/Asset/Images/Authentication/BG_Login.png 2x"
+                      alt=""
+                    />
+                  </div>
+                  <div class="login-form">
+                    <form action="#!" method="post">
+                      <div class="login-form-main">
+                        <div class="login-form-title">
+                          <span class="label-Regular-14"
+                            >Welcome to EasyTravel !</span
+                          >
+                          <h1 class="heading-4">Login with</h1>
+                        </div>
+                        <div class="login-form-input">
+                          <span class="label-Regular-14"></span>
+                          <input
+                            class="body-regular-16"
+                            type="email"
+                            name=""
+                            placeholder="Email"
+                            required
+                          />
+                        </div>
+                        <div class="login-form-input">
+                          <span class="label-Regular-14"></span>
+                          <input
+                            class="body-regular-16 form-input-password"
+                            type="password"
+                            placeholder="Password"
+                            name=""
+                            required
+                          />
+                          <img
+                            class="show-pass"
+                            src="/Asset/Images/Icon/Show.svg"
+                            alt=""
+                          />
+                        </div>
+                        <a href="#!" class="login-forgot label-Regular-12"
+                          >Forgot Password?</a
+                        >
+                      </div>
+                      <button
+                        class="login-button primary-small-button body-regular-16"
+                      >
+                        Login
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="authentication-register disable">
+                <div class="login-main">
+                  <div class="login-background">
+                    <img
+                      srcset="/Asset/Images/Authentication/BG_Register.png 2x"
+                      alt=""
+                    />
+                  </div>
+                  <div class="login-form">
+                    <form action="#!" method="post">
+                      <div class="login-form-main">
+                        <div class="login-form-title">
+                          <span class="label-Regular-14"
+                            >Welcome to EasyTravel !</span
+                          >
+                          <h1 class="heading-4">Create New Account</h1>
+                        </div>
+                        <div class="login-form-input">
+                          <span class="label-Regular-14"></span>
+                          <input
+                            class="body-regular-16"
+                            type="user"
+                            name=""
+                            placeholder="User"
+                            required
+                          />
+                        </div>
+                        <div class="login-form-input">
+                          <span class="label-Regular-14"></span>
+                          <input
+                            class="body-regular-16"
+                            type="email"
+                            name=""
+                            placeholder="Email"
+                            required
+                          />
+                        </div>
+                        <div class="register-input-password">
+                          <div class="login-form-input">
+                            <span class="label-Regular-14"></span>
+                            <input
+                              class="body-regular-16 form-input-password"
+                              type="password"
+                              placeholder="Password"
+                              name=""
+                              required
+                            />
+                            <img
+                              class="show-pass"
+                              src="/Asset/Images/Icon/Show.svg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="login-form-input">
+                            <span class="label-Regular-14"></span>
+                            <input
+                              class="body-regular-16 form-input-password"
+                              type="password"
+                              placeholder="Confirm Password"
+                              name=""
+                              required
+                            />
+                            <img
+                              class="show-pass"
+                              src="/Asset/Images/Icon/Show.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                        <div class="login-conditions">
+                          <input type="checkbox" name="aaaa" />
+                          <p class="login-conditions-desc label-Regular-12">
+                            By creating an account, you agree to the Terms of
+                            Service and Conditions, and Privacy Policy
+                          </p>
+                        </div>
+                      </div>
+                      <button
+                        class="login-button primary-small-button body-regular-16"
+                      >
+                        Register
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-main">
+            <div class="footer-social global-logo">
+              <img
+                class="footer-logo"
+                src="/Asset/Images/Icon/Logo_Full.svg"
+                alt=""
+              />
+              <p class="footer-desc body-regular-16">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's.
+              </p>
+              <div class="footer-icon">
+                <a href="#!"
+                  ><img src="/Asset/Images/Icon/Facebook.svg" alt=""
+                /></a>
+                <a href="#!"
+                  ><img src="/Asset/Images/Icon/Twitter.svg" alt=""
+                /></a>
+                <a href="#!"
+                  ><img src="/Asset/Images/Icon/Instagram.svg" alt=""
+                /></a>
+                <a href="#!"
+                  ><img src="/Asset/Images/Icon/LinkedIn.svg" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="footer-list">
+              <div class="footer-column">
+                <ul>
+                  <li><a class="body-medium-16" href="#!">About us</a></li>
+                  <li><a class="body-medium-16" href="#!">FAQs</a></li>
+                  <li><a class="body-medium-16" href="#!">Blogs</a></li>
+                  <li><a class="body-medium-16" href="#!">Help</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <ul>
+                  <li><a class="body-medium-16" href="#!">Travel</a></li>
+                  <li><a class="body-medium-16" href="#!">Properties</a></li>
+                  <li><a class="body-medium-16" href="#!">Guide</a></li>
+                  <li><a class="body-medium-16" href="#!">Packages</a></li>
+                  <li>
+                    <a class="body-medium-16" href="#!">Terms and conditions</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-contact">
+                <h1 class="label-Regular-14 footer-contact-title">Contact</h1>
+                <div class="footer-contact-email">
+                  <h2 class="label-Regular-14">Email:</h2>
+                  <span class="body-medium-16">ik523817@gmail.com</span>
+                </div>
+                <div class="footer-contact-phone">
+                  <h2 class="label-Regular-14">Phone:</h2>
+                  <span class="body-medium-16">+880 1754941499</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/Asset/Script/Authentication_Page.js"></script>
+    <script src="/Asset/Script/App.js"></script>
+  </body>
+</html>

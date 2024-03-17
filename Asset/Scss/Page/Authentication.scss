@@ -1,0 +1,158 @@
+.authentication {
+  &-main {
+    background-color: $Background-light-grey;
+    margin-bottom: 50px;
+  }
+  &-register.disable,
+  &-login.disable {
+    display: none;
+  }
+}
+.login {
+  &-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 80px;
+  }
+  &-background {
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-form {
+    padding: 60px 50px;
+    background-color: $Background-Card;
+    border-radius: 10px;
+    width: 100%;
+  }
+  &-section-tab {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    background-color: $Background-Card;
+    border-radius: 6px;
+    margin-bottom: 50px;
+  }
+  &-section-login,
+  &-section-register {
+    padding: 11px 40px;
+    color: $text-icon-60;
+    cursor: pointer;
+  }
+  &-section-login.active,
+  &-section-register.active {
+    background-color: $primary-100;
+    color: $text-icon-0;
+    border-radius: 6px;
+  }
+  &-form-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    > span {
+      margin-bottom: 8px;
+      color: $text-icon-60;
+    }
+    > h1 {
+      font-weight: 700;
+    }
+  }
+  &-form-input {
+    position: relative;
+    width: 100%;
+    > input {
+      display: block;
+      outline: none;
+      border: 1px solid $text-icon-20;
+      border-radius: 6px;
+      padding: 15px 20px;
+      width: 100%;
+      transition: all 0.2s linear;
+      &:focus,
+      &:valid {
+        border: 1px solid $text-icon-60;
+      }
+      &::placeholder {
+        color: $text-icon-100;
+      }
+    }
+    > span {
+      margin-bottom: 8px;
+    }
+    margin-bottom: 24px;
+  }
+  &-forgot {
+    display: flex;
+    justify-content: end;
+    color: $text-icon-60;
+    margin-bottom: 24px;
+    transition: all 0.2s linear;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &-button {
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+  &-conditions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+
+    > p {
+      color: $text-icon-60;
+    }
+  }
+}
+.register-input-password {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.show-pass {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 992.98px) {
+  .login-main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  .login-background {
+    img {
+      width: 400px;
+    }
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .register-input-password {
+    display: unset;
+  }
+  .login-form-input > input {
+    padding: 10px 20px;
+  }
+  .login-button {
+    padding: 12px 0;
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  .login-background {
+    img {
+      width: 200px;
+    }
+  }
+}

@@ -3,6 +3,11 @@ body {
   background-color: $Background-light-grey;
   text-transform: capitalize;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+input,
+button {
+  font-family: $primary-font !important;
 }
 
 ::selection {
@@ -61,4 +66,7 @@ body {
       width: 130px;
     }
   }
+}
+.pd-100 {
+  padding: 100px 0;
 }
