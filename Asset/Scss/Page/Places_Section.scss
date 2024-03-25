@@ -16,8 +16,7 @@
     justify-content: space-between;
     align-items: end;
     position: relative;
-    bottom: 130px;
-    // bottom: 20%;
+    bottom: 20%;
     padding: 30px;
     background-color: $Background-light-grey;
     box-shadow: 0px 6px 24px 0px rgba(131, 155, 177, 0.12);
@@ -66,23 +65,12 @@
   }
 }
 // Responsive
-@media screen and (max-width: 490.98px) {
+@media (min-width: 767.98px) and (max-width: 1279.98px) {
   .places {
-    &-item-name,
-    &-item-location,
-    &-item-rate,
-    &-item-prices {
-      margin-bottom: 5px;
-    }
-    &-item-content {
-      justify-content: unset;
-      align-items: unset;
-      flex-direction: column;
-      padding: 12px;
-      bottom: 75px;
-    }
     &-list {
-      grid-auto-columns: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
   }
 }
@@ -90,11 +78,13 @@
   .places {
     &-item-content {
       max-width: unset;
+      border-radius: unset;
+      padding: 20px;
     }
     &-list {
       display: grid;
       justify-content: flex-start;
-      grid-auto-columns: 80%;
+      grid-auto-columns: 70%;
       grid-auto-flow: column;
       grid-gap: 24px;
       overflow: auto;
@@ -115,13 +105,22 @@
     }
   }
 }
-
-@media (min-width: 767.98px) and (max-width: 1279.98px) {
+@media screen and (max-width: 490.98px) {
   .places {
+    &-item-name,
+    &-item-location,
+    &-item-rate,
+    &-item-prices {
+      margin-bottom: 5px;
+    }
+    &-item-content {
+      justify-content: unset;
+      align-items: unset;
+      flex-direction: column;
+      padding: 12px;
+    }
     &-list {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+      grid-auto-columns: 80%;
     }
   }
 }

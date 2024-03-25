@@ -122,11 +122,12 @@
   right: 0;
   top: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 @media screen and (max-width: 992.98px) {
   .login-main {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 50px;
   }
   .login-background {
@@ -138,6 +139,9 @@
   }
 }
 @media screen and (max-width: 767.98px) {
+  .login-form {
+    padding: 45px;
+  }
   .register-input-password {
     display: unset;
   }
@@ -154,5 +158,8 @@
     img {
       width: 200px;
     }
+  }
+  .login-form {
+    padding: 20px;
   }
 }

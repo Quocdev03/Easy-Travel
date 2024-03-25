@@ -29,6 +29,7 @@ button {
   &-title {
     margin-bottom: 50px;
     position: relative;
+    color: transparent;
     &::after {
       display: block;
       position: absolute;
@@ -52,7 +53,20 @@ button {
   }
   &-title-main {
     > h1 {
-      color: $text-icon-100;
+      // color: $text-icon-100;
+      background-clip: text;
+      -webkit-background-clip: text;
+      // background-image: linear-gradient(
+      //   to right bottom,
+      //   $primary-100,
+      //   $primary-60
+      // );
+      background-image: linear-gradient(
+        135deg,
+        $ff-aqua 0%,
+        $ff-blue 50%,
+        $ff-purple 100%
+      );
     }
     max-width: 270px;
   }
